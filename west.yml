@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: denisbohm
+      url-base: https://github.com/denisbohm
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import: true
+    - name: firefly-zephyr
+      remote: denisbohm
+      revision: main
+  self:
+    path: firefly/sample
