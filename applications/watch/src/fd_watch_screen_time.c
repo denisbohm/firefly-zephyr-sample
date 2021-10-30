@@ -31,7 +31,9 @@ void fd_watch_screen_time_add_drawing(void *object, fd_drawing_class_t *class) {
     ++fd_watch_screen_time.plane.drawing_count;
 }
 
-int64_t fd_rtc_get_utc(void);
+int64_t fd_rtc_get_utc(void) {
+    return 978307200;
+}
 
 #define UTC_2001 978307200
 

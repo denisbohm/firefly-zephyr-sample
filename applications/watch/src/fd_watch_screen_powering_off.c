@@ -87,7 +87,7 @@ void fd_watch_screen_powering_off_initialize(fd_ux_screen_t *screen) {
     };
     fd_watch_screen_powering_off_add_drawing(&fd_watch_screen_powering_off.text, &fd_drawing_text_class);
     
-    strlcpy(fd_watch_screen_powering_off.countdown_buffer, "5", sizeof(fd_watch_screen_powering_off.countdown_buffer));
+    strncpy(fd_watch_screen_powering_off.countdown_buffer, "5", sizeof(fd_watch_screen_powering_off.countdown_buffer));
     fd_watch_screen_powering_off.countdown.view = (fd_view_text_t) {
         .visible = true,
         .location = { .x = 64, .y = 96 },
